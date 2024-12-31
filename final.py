@@ -13,7 +13,6 @@ from googleapiclient.discovery import build
 from openai import OpenAI
 
 # Carrega variáveis de ambiente
-OpenAI.api_key = st.secrets["openai"]["api_key"] 
 
 # ------------------------------------------------
 # CONFIGURAÇÃO DA PÁGINA
@@ -63,7 +62,7 @@ def append_row_to_sheet(spreadsheet_id, sheet_name, row_data, credentials):
 # FUNÇÕES DO ASSISTANT (SEU SCRIPT ORIGINAL)
 # ------------------------------------------------
 
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 assist_name = "Copy of BucoApp IA"
 
 def fetch_assistant_by_name(data, assist_name):
