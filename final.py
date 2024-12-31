@@ -4,7 +4,6 @@ import time
 import json
 import pandas as pd
 import datetime
-from dotenv import load_dotenv
 
 # GOOGLE SHEETS
 from google.oauth2.service_account import Credentials
@@ -14,7 +13,6 @@ from googleapiclient.discovery import build
 from openai import OpenAI
 
 # Carrega variáveis de ambiente
-load_dotenv()
 OPENAI_API_KEY = st.secrets["openai"]["api_key"] 
 
 # ------------------------------------------------
