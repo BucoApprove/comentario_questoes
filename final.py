@@ -13,7 +13,7 @@ from googleapiclient.discovery import build
 from openai import OpenAI
 
 # Carrega variáveis de ambiente
-OPENAI_API_KEY = st.secrets["openai"]["api_key"] 
+OpenAI.api_key = st.secrets["openai"]["api_key"] 
 
 # ------------------------------------------------
 # CONFIGURAÇÃO DA PÁGINA
