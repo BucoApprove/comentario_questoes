@@ -96,14 +96,14 @@ def initiate_assistant():
     ### 4. Estrutura da Resposta
     A resposta deve ser organizada em uma estrutura clara, contendo:
 
-    1. **Resposta direta à dúvida**.
-    2. **Explicação detalhada**, incluindo conceitos relevantes.
-    3. **Referências aos livros** (título e, quando disponível, edição) da Vector Store que embasaram a resposta.
+    1. Resposta direta à dúvida.
+    2. Explicação detalhada, incluindo conceitos relevantes.
+    3. Referências aos livros (título e, quando disponível, edição) da Vector Store que embasaram a resposta.
 
     #### Exemplo de Estrutura:
-    - **Resposta:** [Forneça uma resposta objetiva à pergunta].
-    - **Comentário:** [Apresente uma explicação detalhada que justifique a resposta, incluindo a base teórica ou prática].
-    - **Fonte:** [Título do livro e edição].
+    - Resposta: [Forneça uma resposta objetiva à pergunta].
+    - Comentário: [Apresente uma explicação detalhada que justifique a resposta, incluindo a base teórica ou prática].
+    - Fonte: [Título do livro e edição].
 
     ### 5. Análise Crítica e Alternativas
     - Caso existam diferentes abordagens ou controvérsias na literatura, destaque-as, mencionando os livros que sustentam cada ponto de vista.
