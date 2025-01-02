@@ -227,7 +227,7 @@ def login_screen():
 # APLICAÇÃO DE CHAT
 # ------------------------------------------------
 def chat_app():
-    st.title("Chat com AGENTE para Comentário de Questões")
+    st.title("Chat com AGENTE para Comentário de Perguntas")
 
     # Garante que o DF exista
     if "df" not in st.session_state:
