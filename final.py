@@ -139,9 +139,11 @@ def initiate_assistant():
         my_assistant = client.beta.assistants.create(
             instructions=system_msg,
             name=assist_name,
-            tools={
-                "type": "file_search",
-                "vector_store_id": "vs_ryOfIVIPUi66k3G34SCxexNv"
+            tools=[{"type": "file_search"}],
+            tool_resources = {
+                "file_search" : {
+                    "vector_store_ids" : ["vs_ryOfIVIPUi66k3G34SCxexNv"]
+                }
             },
             model="gpt-4o-mini",
         )
